@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</head>
+<body ng-controller="TodoListController as todoList">
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col s6">
+          <h2>My To Do List</h2>
+
+          <!-- <div class="input-field">
+            <input type="text" ng-model="todoItem">
+            <label for="todoItemInput">Add to list</label>
+          </div> -->
+          <ul>
+            <li ng-repeat="todo in todoList.todoItems">
+              <p class="checkbox">
+                <span>{{todo}}</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+</body>
+</html>
