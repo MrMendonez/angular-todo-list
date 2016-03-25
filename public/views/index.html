@@ -14,11 +14,7 @@
       <div class="row">
         <div class="col s6">
           <h2>My To Do List</h2>
-
-          <!-- <div class="input-field">
-            <input type="text" ng-model="todoItem">
-            <label for="todoItemInput">Add to list</label>
-          </div> -->
+          <button href="" ng-click="todoList.remove()" class="btn red accent-4 right"><i class="fa fa-trash-o"></i></button>
           <ul>
             <li ng-repeat="todo in todoList.todoItems">
               <p class="checkbox">
@@ -29,7 +25,7 @@
           </ul>
           <form ng-submit="todoList.addTodo()">
             <input type="text" ng-model="todoList.todoText" placeholder="Add new item" />
-            <button class="btn" type="submit">Add</button>
+            <button class="btn" type="submit"><i class="fa fa-plus"></i></button>
           </form>
         </div>
       </div>

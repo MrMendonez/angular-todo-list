@@ -13,6 +13,14 @@ angular.module("todoApp", [])
         { name: todoList.todoText, done: false }
       )
       todoList.todoText = ""
-      console.log('This worked');
     };
+
+    todoList.remove = function() {
+      var oldTodos = todoList.todoItems;
+      todoList.todoItems = [];
+      angular.forEach(oldTodos, function(todo) {
+        if(!todo.done) todoList.todoItems.push(todo);
+      })
+      todoList.todoItems
+    }
   });
