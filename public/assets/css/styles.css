@@ -5,7 +5,13 @@ ul li {
   list-style-type: disc;
 }
 
-.black-text-label {
+.done-false {
   font-size: 1.0rem;
   color: #000000;
+}
+
+.done-true {
+  font-size: 1.0rem;
+  text-decoration: line-through;
+  color: gray;
 }

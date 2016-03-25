@@ -24,7 +24,7 @@
             <li ng-repeat="todo in todoList.todoItems">
               <p class="checkbox">
                 <input type="checkbox" ng-model="todo.done" id="todoItem-{{$index}}"/>
-                <label class="black-text-label" for="todoItem-{{$index}}">{{todo.name}}</label>
+                <label class="done-{{todo.done}}" for="todoItem-{{$index}}">{{todo.name}}</label>
               </p>
             </li>
           </ul>
