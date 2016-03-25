@@ -5,6 +5,7 @@ var logger = require('morgan');
 
 var app = express();
 var db = 'mongodb://localhost/angularTodoList';
+mongoose.connect(db);
 
 var PORT = process.env.PORT || 4000;
 
