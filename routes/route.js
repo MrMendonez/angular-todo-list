@@ -2,7 +2,7 @@ var passport = require('passport');
 var passportLocal = require('passport-local');
 var bcrypt = require('bcryptjs');
 var session = require('express-session');
-var controller = require('../controlllers/controller.js');
+var controller = require('../controllers/controller.js');
 var User = require('../models/user.js');
 
 module.exports.routes = function(app) {
