@@ -12,6 +12,8 @@ app.get('*', function(req, res) {
   res.sendFile(process.cwd() + '/public/views/index.html');
 });
 
+var route = require('./routes/route.js');
+
 app.listen(PORT, function() {
   console.log("listening on port", PORT);
 });

@@ -5,10 +5,6 @@ body {
   background-image: url('../img/lined_paper.png');
 }
 
-ul li {
-  list-style-type: disc;
-}
-
 .done-false {
   font-size: 1.0rem;
   color: #000000;
