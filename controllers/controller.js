@@ -23,3 +23,13 @@ exports.logout = function(req, res, next) {
     res.redirect('/');
   });
 }
+
+exports.signup = function(req, res, next) {
+  var user = new User(req.body);
+  user.save(function(err) {
+    if(err) throw err;
+  })
+  .then(function(user) {
+    console.log('saved!');
+  });
+}

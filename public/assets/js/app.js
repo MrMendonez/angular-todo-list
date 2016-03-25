@@ -1,6 +1,7 @@
 angular.module("todoApp", [])
-  .controller("TodoListController", function($scope) {
+  .controller("TodoListController", function($scope, $http) {
     var todoList = this;
+    todoList.forms = {};
     todoList.todoItems = [
       { name: "Wake up", done: true },
       { name: "Go to work", done: false },
@@ -29,6 +30,17 @@ angular.module("todoApp", [])
       angular.forEach(todoList.todoItems, function(todo) {
         notCompletedCount += todo.done ? 0 : 1;
       })
+
+      todoList.signup = function() {
+        
+        $http.post('/signup', {
+          username: todoList.forms.username,
+          password: todoList.forms.password
+        })
+        .then(function(results) {
+          //do stuff
+        });
+      }
 
       return notCompletedCount;
     }

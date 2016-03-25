@@ -32,6 +32,8 @@ module.exports.routes = function(app) {
     })
   );
 
+  app.post('/signup', controller.signup);
+
   // passport
   passport.serializeUser(function(user, done) {
     done(null, user);
