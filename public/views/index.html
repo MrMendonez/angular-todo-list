@@ -22,10 +22,15 @@
           <ul>
             <li ng-repeat="todo in todoList.todoItems">
               <p class="checkbox">
-                <span>{{todo}}</span>
+                <input type="checkbox" ng-model="todo.done" id="todoItem-{{$index}}"/>
+                <label class="black-text-label" for="todoItem-{{$index}}">{{todo.name}}</label>
               </p>
             </li>
           </ul>
+          <form ng-submit="todoList.addTodo()">
+            <input type="text" ng-model="todoList.todoText" placeholder="Add new item" />
+            <button class="btn" type="submit">Add</button>
+          </form>
         </div>
       </div>
     </div>

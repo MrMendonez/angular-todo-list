@@ -1,0 +1,11 @@
+/* Styles for Angular Todo List App */
+
+/* Materialize removes bullets for li tags. This will put it back in */
+ul li {
+  list-style-type: disc;
+}
+
+.black-text-label {
+  font-size: 1.0rem;
+  color: #000000;
+}
