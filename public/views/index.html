@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col s6">
           <h2>My To Do List</h2>
-          <span>??? of {{todoList.todoItems.length}} remaining</span>
+          <span>{{ todoList.remaining() }} of {{ todoList.todoItems.length }} remaining</span>
           <form ng-submit="todoList.addTodo()">
             <input type="text" ng-model="todoList.todoText" placeholder="Add new item" />
             <button class="btn" type="submit"><i class="fa fa-plus"></i></button>

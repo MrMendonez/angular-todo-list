@@ -23,4 +23,13 @@ angular.module("todoApp", [])
       })
       todoList.todoItems
     }
+
+    todoList.remaining = function() {
+      var notCompletedCount = 0;
+      angular.forEach(todoList.todoItems, function(todo) {
+        notCompletedCount += todo.done ? 0 : 1;
+      })
+
+      return notCompletedCount;
+    }
   });
