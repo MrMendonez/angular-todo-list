@@ -12,6 +12,7 @@ angular.module("todoApp", [])
       todoList.todoItems.push(
         { name: todoList.todoText, done: false }
       )
+      todoList.todoText = ""
       console.log('This worked');
     };
   });
