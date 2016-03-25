@@ -2,10 +2,10 @@ angular.module("todoApp", [])
   .controller("TodoListController", function($scope) {
     var todoList = this;
     todoList.todoItems = [
-      { name: "My Homework", done: true },
-      { name: "My Laundry", done: false },
-      { name: "One Thing", done: false },
-      { name: "Another Thing", done: false }
+      { name: "Wake up", done: true },
+      { name: "Go to work", done: false },
+      { name: "Drink coffee", done: false },
+      { name: "Hustle", done: false }
     ]
 
     todoList.addTodo = function() {
