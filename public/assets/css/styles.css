@@ -1,6 +1,10 @@
 /* Styles for Angular Todo List App */
 
 /* Materialize removes bullets for li tags. This will put it back in */
+body {
+  background-image: url('../img/lined_paper.png');
+}
+
 ul li {
   list-style-type: disc;
 }
