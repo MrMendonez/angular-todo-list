@@ -31,17 +31,17 @@ angular.module("todoApp", [])
         notCompletedCount += todo.done ? 0 : 1;
       })
 
-      todoList.signup = function() {
-        
-        $http.post('/signup', {
-          username: todoList.forms.username,
-          password: todoList.forms.password
-        })
-        .then(function(results) {
-          //do stuff
-        });
-      }
-
       return notCompletedCount;
     }
+
+    todoList.signup = function() {  
+      $http.post('/signup', {
+        username: todoList.forms.username,
+        password: todoList.forms.password
+      })
+      .then(function(results) {
+        //do stuff
+      });
+    }
+    
   });
