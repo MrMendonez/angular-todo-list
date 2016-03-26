@@ -26,6 +26,7 @@ exports.logout = function(req, res, next) {
 
 exports.signup = function(req, res, next) {
   var user = new User(req.body);
+  console.log(user);
   console.log("USER:\t" + user);
   user.save(function(err) {
     if(err) throw err;

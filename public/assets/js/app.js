@@ -34,10 +34,12 @@ angular.module("todoApp", [])
       return notCompletedCount;
     }
 
-    todoList.signup = function() {  
+    todoList.signup = function() { 
+    console.log('here');
+    console.log(todoList.forms.signupusername);
       $http.post('/signup', {
-        username: todoList.forms.username,
-        password: todoList.forms.password
+        username: todoList.forms.signupusername,
+        password: todoList.forms.signuppassword
       })
       .then(function(results) {
         //do stuff
