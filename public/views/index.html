@@ -20,8 +20,8 @@
           <form ng-submit="todoList.addTodo()">
             <input type="text" ng-model="todoList.todoText" placeholder="Add new item" />
             <button class="btn" type="submit"><i class="fa fa-plus"></i></button>
+            <button href="" ng-click="todoList.remove()" class="btn red accent-4"><i class="fa fa-trash-o"></i></button>
           </form>
-          <button href="" ng-click="todoList.remove()" class="btn red accent-4 right"><i class="fa fa-trash-o"></i></button>
           <ul>
             <li ng-repeat="todo in todoList.todoItems">
               <p class="checkbox">
