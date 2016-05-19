@@ -5,8 +5,8 @@ body {
   background-image: url('../img/lined_paper.png');
 }
 
-ul li {
-  list-style-type: disc;
+#add-form {
+  display: inline;
 }
 
 .done-false {
